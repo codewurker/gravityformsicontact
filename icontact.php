@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 Plugin Name: Gravity Forms iContact Add-On
 Plugin URI: https://gravityforms.com
 Description: Integrates Gravity Forms with iContact, allowing form submissions to be automatically sent to your iContact account.
-Version: 1.5
+Version: 1.6.0
 Author: Gravity Forms
 Author URI: https://gravityforms.com
 License: GPL-2.0+
@@ -17,7 +17,7 @@ Text Domain: gravityformsicontact
 Domain Path: /languages
 
 ------------------------------------------------------------------------
-Copyright 2009-2020 rocketgenius
+Copyright 2009-2024 rocketgenius
 
 
 This program is free software; you can redistribute it and/or modify
@@ -35,7 +35,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 */
 
-define( 'GF_ICONTACT_VERSION', '1.5' );
+define( 'GF_ICONTACT_VERSION', '1.6.0' );
 
 add_action( 'gform_loaded', array( 'GF_iContact_Bootstrap', 'load' ), 5 );
 

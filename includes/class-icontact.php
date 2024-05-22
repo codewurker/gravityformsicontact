@@ -5,6 +5,9 @@ class iContact {
 	protected $api_url = 'https://app.icontact.com/icp/a/';
 	protected $account_id = null;
 	protected $client_folder_id = null;
+	protected $api_username = null;
+	protected $api_password = null;
+	protected $app_id = null;
 
 	public function __construct( $app_id, $api_username, $api_password, $client_folder_id = null ) {
 

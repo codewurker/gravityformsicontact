@@ -36,6 +36,15 @@ class GFiContact extends GFFeedAddOn {
 	protected $_capabilities = array( 'gravityforms_icontact', 'gravityforms_icontact_uninstall' );
 
 	/**
+	 * Enabling background feed processing to prevent performance issues delaying form submission completion.
+	 *
+	 * @since 1.6
+	 *
+	 * @var bool
+	 */
+	protected $_async_feed_processing = true;
+
+	/**
 	 * Get instance of this class.
 	 * 
 	 * @access public
@@ -146,6 +155,7 @@ class GFiContact extends GFFeedAddOn {
 						'name'              => 'client_folder',
 						'label'             => esc_html__( 'Client Folder', 'gravityformsicontact' ),
 						'type'              => 'select',
+						'required'          => true,
 						'choices'           => version_compare( GFForms::$version, '2.5-dev-1', '>=' ) ? array( $this, 'client_folders_for_plugin_setting' ) : $this->client_folders_for_plugin_setting(),
 						'dependency'        => array( $this, 'initialize_api' ),
 						'no_choices'        => esc_html__( 'Unable to retrieve Client Folders.', 'gravityformsicontact' ),

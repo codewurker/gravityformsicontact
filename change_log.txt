@@ -1,3 +1,8 @@
+### 1.6.0 | 2024-05-21
+- Added support for async (background) feed processing to improve form submission performance.
+- Fixed an issue that allows users to skip the client folder field when configuring the plugin.
+- Fixed a PHP 8.2 creation of dynamic property deprecation notice that occurs on the settings page.
+
 ### 1.5 | 2020-09-08
 - Added support for Gravity Forms 2.5.
 - Fixed a PHP fatal error which occurs when accessing an existing feed which was created by a different iContact account.
